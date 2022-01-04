@@ -1,12 +1,87 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8"/>
-    <title>My First Parcel App</title>
-    <link rel="stylesheet" href="styles.css" />
-    <script type="module" src="app.js"></script>
-  </head>
-  <body>
-    <h1>Hello, World!</h1>
-  </body>
+<head>
+    <meta charset="UTF-8" />
+    <title>Linkedin Post</title>
+
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="https://kit.fontawesome.com/3055f91a99.js"></script>
+</head>
+
+<body>
+    <div id="app">
+        <div class="box">
+            <!-- Author begins -->
+            <div class="post-author">
+                <a href="#">
+                    <div>
+                        <img src="../assets/google.png" alt="">
+                        <div>
+                            <div>
+                                <strong class="post-author-name">Google</strong>
+                            </div>
+                            <span>23,251,608 followers</span>
+                            <span>23h &nbsp;·&nbsp; Edited &nbsp;·&nbsp; <span class="fas fa-crow"></span></span>
+                        </div>
+                    </div>
+                </a>
+                <div>
+                    <span class="fas fa-circle"></span>
+                    <span class="fas fa-circle"></span>
+                    <span class="fas fa-circle"></span>
+                </div>
+            </div>
+            <!-- Author end -->
+
+            <!-- data begins -->
+            <div class="post-data">
+                <p>
+                    Thanks so much to everyone who attended The Vision Summit: An experience for Women of Color earlier this month.
+                    <br>
+                    <a href="#"><strong>#ICYMI</strong></a> check out the recorded sessions at <a href="#"><strong>https://link.in/gxuv2XG</strong></a> 
+                    <a class="see-more" href="#">... see more</a>
+                </p>
+                <a class="external" href="#">
+                    <img class="image" src="../assets/post-image.jfif" alt="" />
+                    <strong class="external-data-title">The Vision Summit 2021: an experience for Women of Color</strong>
+                    <span class="external-data-link">careersonair.withgoogle.com&nbsp;·&nbsp;1 min read</span>
+                </a>
+            </div>
+            <!-- data end -->
+
+            <!-- interaction begin -->
+            <div id="post-interactions">
+                <div id="interactions-amount">
+                    <div class="icons">
+                        <span id="like-icon" class="fas fa-thumbs-up fa-flip-horizontal"></span>
+                        <span id="heart-icon" class="fas fa-heart"></span>
+                        <span id="clap-icon" class="fas fa-hands-wash"></span>
+                        <span id="amount-info">23</span>
+                    </div>
+
+                    <span id="comments">73 Comments</span>
+                </div>
+                <div id="interactions-btns">
+                    <button>
+                        <span class="far fa-thumbs-up fa-flip-horizontal"></span>
+                        <span>Like</span>
+                    </button>
+                    <button>
+                        <span class="far fa-comment-dots fa-flip-horizontal"></span>
+                        <span>Comment</span>
+                    </button>
+                    <button>
+                        <span class="far fa-share-square"></span>
+                        <span>Share</span>
+                    </button>
+                    <button>
+                        <span class="far fa-paper-plane"></span>
+                        <span>Send</span>
+                    </button>
+                </div>
+            </div>
+            <!-- interaction end -->
+        </div>
+    </div>
+</body>
 </html>
