@@ -4,21 +4,21 @@ import axios from "axios";
 axios
   .get("https://my-json-server.typicode.com/modanisatech/bootcamp-db/products")
   .then((response) => {
-    // ++ Firstly, log response to the console,
-    // ++ inspect the response and see that it has data field
-    // console.log(response);
+    // Firstly, log response to the console,
+    // inspect the response and see that it has data field
+    console.log(response);
 
-    // ++ Assign data field of the response to
-    // ++ products variable below by destructuring
-    // ++ You can use alias
+    // Assign data field of the response to
+    // products variable below by destructuring
+    // You can use alias
     const { data: products } = response;
-    // ++ Print names of all product to the console
-    // ++ by calling foreach  method (use arrow function)
-    // products.forEach(item => console.log(item.name));
+    // Print names of all product to the console
+    // by calling foreach  method (use arrow function)
+    products.forEach((item) => console.log(item.name));
 
-    // ++ Get all products that contain "Şal" in their name (use filter method)
-    // ++ map filtered products to new object having only image and name field
-    // ++ assign mapped items to mappedProducts variable
+    // Get all products that contain "Şal" in their name (use filter method)
+    // map filtered products to new object having only image and name field
+    // assign mapped items to mappedProducts variable
     const mappedProducts = products
       .filter((product) => product.name.includes("Şal"))
       .map((product) => ({ name: product.name, image: product.image }));
